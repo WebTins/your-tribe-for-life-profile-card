@@ -36,7 +36,7 @@
         </div>
 
         <h2>{person.name}</h2>
-        <h3>Student of Hogeschool van Amsterdam</h3>
+        <h3>Student Hogeschool van Amsterdam</h3>
     </section>
 
     <ul class="bottom-content">
@@ -65,7 +65,11 @@
             font-family: Movement;
             display: flex;
             align-self: center;
-            margin-right: 4em;
+            margin-bottom: .2em;
+            margin-right: 1.5em;
+            line-height: .9;
+            width: 7ch;
+            font-size: 3em;
         }
 
         section {
@@ -81,12 +85,20 @@
             h2, h3 {
                 display: flex;
                 align-self: flex-start;
+            }
+
+            h2 {
+                color: var(--primary-accent);
+                width: 3ch;
+                padding: .4em 0 .4em 1em;
+                padding-top: .4em;
                 padding-left: 1em;
+                line-height: .8;
             }
 
             h3 {
-                font-size: 16px;
-                width: 18ch;
+                font-size: 12px;
+                padding-left: 2em;
             }
         }
 
@@ -100,16 +112,17 @@
             .mugshot {
                 position: absolute;
                 bottom: 0;
-                left: 10%;
-                width: 250px;
+                left: -2%;
+                width: 313px;
                 filter: grayscale(1);
             }
             
 
-
             .socials {
                 display: flex;
                 flex-direction: column;
+                position: absolute;
+                right: 4%;
                 gap: 1em;
                 padding: 1rem 0 0 0;
             }
@@ -118,10 +131,11 @@
         .bottom-content {
             display: flex;
             color: var(--secondary-accent);
-            gap: 5rem;
+            gap: 4.5rem;
             align-items: center;
             padding: 0;
             margin-top: .5em;
+            font-family: Movement;
         }
     }
 </style>
