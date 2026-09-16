@@ -1,5 +1,7 @@
 <script>
     import tin from "$lib/assets/tin.png"
+    import avif from "$lib/assets/tin.avif.avif"
+    import webp from "$lib/assets/tin.webp.webp"
 
     let { data } = $props();
     const person = data.person;
@@ -12,7 +14,22 @@
 
     <section>
         <div>
-            <img class="mugshot" src={tin} alt="tin" width="200">
+            <picture>
+                <source
+                    type="image/avif"
+                    srcset={avif}
+                />
+                <source
+                    type="image/webp"
+                    srcset={webp}
+                />
+                <img
+                    class="mugshot"
+                    src= {tin}
+                    alt="Afbeelding tin"
+                />
+            </picture>
+            
             <ul class="socials">
                 <li>
                     <a href="https://www.instagram.com/tin_ng2004/" aria-label="Instagram" target="_blank">
