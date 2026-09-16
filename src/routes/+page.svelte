@@ -44,4 +44,83 @@
         <li>Front-end</li>
     </ul>
 </footer>
+<style>
+    @font-face {
+        font-family: Movement;
+        src: url("/fonts/MovementV.ttf") format("truetype");
+    }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: var(--primary-accent);
+        height: 100vh;
+
+        h1 {
+            color: var(--secondary-accent);
+            font-family: Movement;
+            display: flex;
+            align-self: center;
+            margin-right: 4em;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-width: 345px;
+            min-height: 465px;
+            background-color: var(--secondary-accent);
+            font-family: Movement;
+
+            h2, h3 {
+                display: flex;
+                align-self: flex-start;
+                padding-left: 1em;
+            }
+
+            h3 {
+                font-size: 16px;
+                width: 18ch;
+            }
+        }
+
+        div {
+            position: relative;
+            display: flex;
+            min-width: 300px;
+            height: 350px;
+            background-color: var(--primary-accent);
+
+            .mugshot {
+                position: absolute;
+                bottom: 0;
+                left: 10%;
+                width: 250px;
+                filter: grayscale(1);
+            }
+            
+
+
+            .socials {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                padding: 1rem 0 0 0;
+            }
+        }
+
+        .bottom-content {
+            display: flex;
+            color: var(--secondary-accent);
+            gap: 5rem;
+            align-items: center;
+            padding: 0;
+            margin-top: .5em;
+        }
+    }
+</style>
