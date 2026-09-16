@@ -14,12 +14,9 @@
     </h1>
 
     <section>
-        <h2>Tin Nguyen</h2>
-        <h3>Student of Hogeschool van Amsterdam</h3>
         <div>
-            <img src={tin} alt="tin" width="200">
-
-            <ul>
+            <img class="mugshot" src={tin} alt="tin" width="200">
+            <ul class="socials">
                 <li>
                     <a href="https://www.instagram.com/tin_ng2004/">
                         <img src={instagram} alt="instagram icon" width="35">
@@ -37,16 +34,17 @@
                 </li>
             </ul>
         </div>
-    </section>
-</main>
 
-<footer>
-    <ul>
+        <h2>{person.name}</h2>
+        <h3>Student of Hogeschool van Amsterdam</h3>
+    </section>
+
+    <ul class="bottom-content">
         <li>@Almere</li>
         <li>22yrs</li>
         <li>Front-end</li>
     </ul>
-</footer>
+</main>
 <style>
     @font-face {
         font-family: Movement;
