@@ -3,6 +3,9 @@
     import instagram from "$lib/assets/instagram.webp"
     import github from "$lib/assets/github.webp"
     import linkedin from "$lib/assets/linkedin.png"
+
+    let { data } = $props();
+    const person = data.person;
 </script>
 
 <main>
