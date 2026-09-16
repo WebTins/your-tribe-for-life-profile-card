@@ -48,6 +48,28 @@
         src: url("/fonts/MovementV.ttf") format("truetype");
     }
 
+    @keyframes --bubble-animation {
+        0% {
+            scale: 1;
+        }
+        
+        25% {
+            scale: 0.75;
+        }
+        
+        50%{
+            scale: 1.5;
+        }
+        
+        75% {
+            scale: 0.7;
+        }
+        
+        100% {
+            scale: 1;
+        }
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -125,6 +147,33 @@
                 padding: .8rem 0 0 0;
                 width: 35px;
                 
+            a {
+                    svg {
+                        overflow: visible;
+                    }
+
+                    svg path {
+                        transition: .4s ease-in-out;
+                        transform-box: fill-box;
+                        transform-origin: center;
+                    }
+
+                    &:focus-visible {
+                        outline: none;
+
+                        svg path {
+                            fill: var(--psuedo-accent);
+                        }
+
+                        @media (prefers-reduced-motion: no-preference) {
+                            svg path {
+                                animation-name: --bubble-animation;
+                                animation-duration: .8s;
+                                animation-iteration-count: infinite;
+                            }
+                        }
+                    }
+                }
             }
         }
 
