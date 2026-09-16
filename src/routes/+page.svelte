@@ -33,7 +33,7 @@
         </div>
 
         <h2>{person.name}</h2>
-        <h3>Student Hogeschool van Amsterdam</h3>
+        <h3>FDND Hogeschool van Amsterdam</h3>
     </section>
 
     <ul class="bottom-content">
@@ -56,10 +56,10 @@
 
         background: var(--primary-accent);
         height: 100vh;
+        font-family: Movement;
 
         h1 {
             color: var(--secondary-accent);
-            font-family: Movement;
             display: flex;
             align-self: center;
             margin-bottom: .2em;
@@ -77,7 +77,6 @@
             min-width: 345px;
             min-height: 465px;
             background-color: var(--secondary-accent);
-            font-family: Movement;
 
             h2, h3 {
                 display: flex;
@@ -94,8 +93,10 @@
             }
 
             h3 {
-                font-size: 12px;
-                padding-left: 2em;
+                font-size: 16px;
+                padding-left: 1.5em;
+                font-weight: 500;
+                width: 25ch;
             }
         }
 
@@ -121,7 +122,9 @@
                 position: absolute;
                 right: 4%;
                 gap: 1em;
-                padding: 1rem 0 0 0;
+                padding: .8rem 0 0 0;
+                width: 35px;
+                
             }
         }
 
@@ -132,7 +135,6 @@
             align-items: center;
             padding: 0;
             margin-top: .5em;
-            font-family: Movement;
         }
     }
 </style>
