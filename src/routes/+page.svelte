@@ -106,6 +106,9 @@
             line-height: .9;
             width: 7ch;
             font-size: 3em;
+            @media (min-width: 768px) {
+                margin-right: 2em;
+            }
         }
 
         section {
@@ -116,6 +119,9 @@
             min-width: 345px;
             min-height: 465px;
             background-color: var(--secondary-accent);
+            @media (min-width: 768px) {
+                min-width: 365px;
+                min-height: 485px;
 
             h2, h3 {
                 display: flex;
@@ -146,6 +152,10 @@
             height: 350px;
             background-color: var(--primary-accent);
 
+            @media (min-width: 768px) {
+                min-width: 320px;
+                min-height: 360px;
+            }
             .mugshot {
                 position: absolute;
                 bottom: 0;
