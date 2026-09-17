@@ -106,8 +106,19 @@
             line-height: .9;
             width: 7ch;
             font-size: 3em;
+            font-variation-settings: "wght" 400, "SPAC" 100;
+            transition: 
+            font-variation-settings 1.5s ease-in-out,
+            color 1s ease-in-out,
+            margin-right 1s ease-in-out;
+
             @media (min-width: 768px) {
                 margin-right: 2em;
+            }
+
+            &:hover {
+                font-variation-settings: "wght" 700, "SPAC" 120;
+                color: var(--psuedo-accent);
             }
         }
 
@@ -119,9 +130,12 @@
             min-width: 345px;
             min-height: 465px;
             background-color: var(--secondary-accent);
+            transition: .4s ease-in-out;
+
             @media (min-width: 768px) {
                 min-width: 365px;
                 min-height: 485px;
+            }
 
             h2, h3 {
                 display: flex;
@@ -135,6 +149,13 @@
                 padding-top: .4em;
                 padding-left: 1em;
                 line-height: .8;
+
+                font-variation-settings: "wght" 600, "SPAC" 100;
+                transition: font-variation-settings 1.5s ease-in-out;
+
+                &:hover {
+                    font-variation-settings: "wght" 900, "SPAC" 120;
+                }
             }
 
             h3 {
@@ -142,6 +163,13 @@
                 padding-left: 1.5em;
                 font-weight: 500;
                 width: 25ch;
+
+                font-variation-settings: "wght" 400, "SPAC" 100;
+                transition: font-variation-settings 1s ease-in-out;
+
+                &:hover {
+                    font-variation-settings: "wght" 600, "SPAC" 110;
+                }
             }
         }
 
@@ -152,10 +180,13 @@
             height: 350px;
             background-color: var(--primary-accent);
 
+            transition: .4s ease-in-out;
+
             @media (min-width: 768px) {
                 min-width: 320px;
                 min-height: 360px;
             }
+
             .mugshot {
                 position: absolute;
                 bottom: 0;
@@ -200,6 +231,12 @@
                             }
                         }
                     }
+
+                    &:hover {
+                        svg path {
+                            fill: var(--psuedo-accent);
+                        }
+                    }
                 }
             }
         }
@@ -211,6 +248,15 @@
             align-items: center;
             padding: 0;
             margin-top: .5em;
+
+            font-variation-settings: "wght" 400, "SPAC" 100;
+            transition: font-variation-settings 1s ease-in-out,
+            color 1s ease-in-out;
+
+            &:hover {
+                font-variation-settings: "wght" 600, "SPAC" 130;
+                color: var(--psuedo-accent);
+            }
         }
     }
 </style>
